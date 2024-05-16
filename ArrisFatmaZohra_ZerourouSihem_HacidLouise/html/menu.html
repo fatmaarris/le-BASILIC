@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Le BASILIC -Menu-</title>
+    <link rel="shortcut icon" href="/images/logo.png">
+   <link rel="stylesheet" href="/style/styleM.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <img src="/images/logooo.png" alt="logo">
+        <nav>
+            <ul>
+             <li><a href="/html/test1.html" >Acceuil</a></li>
+             <li><a href="/html/menu.html" >Menu</a></li> 
+             <li><a href="/html/test3.html" >Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <h1>MENU</h1>
+    <button id="openModalButton">Réserver une table</button>
+
+<!-- Modal pour le formulaire de réservation -->
+<div id="reservationModal" class="modal">
+    <div class="modal-content">
+        <span id="closeModalButton" class="close">&times;</span>
+        <h2>Formulaire de réservation</h2>
+        <form id="reservationForm">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" required><br><br>
+            
+            <label for="time">Heure :</label>
+            <input type="time" id="time" name="time" required><br><br>
+            
+            <button type="submit">Confirmer la réservation</button>
+        </form>
+    </div>
+</div>
+    <nav class="menu-nav">
+        <a href="#entrees">Entrées</a>
+        <a href="#plats">Plats</a>
+        <a href="#desserts">Desserts</a>
+    </nav>
+
+    
+    <h2><u>ENTREES</u></h2>
+    <div id="entrees" class="menu-section">
+    <div class="menu-item">  
+        <div class="item-image">
+            <img src="/images/ET1.jpg" alt="ENTREE1" title="Bruschetta traditionnelle">
+        </div>
+        <div class="item-details">
+            <h3>Bruschetta traditionnelle </h3>
+            <p>Tranches de pain grillé, tomates fraîches, ail, basilic, huile d'olive.</p>
+        </div>
+        <div class="item-price">
+            <span class="price">400 DA</span>
+            <button>Commander</button>
+        </div>
+     </div>
+
+     <div class="menu-item">
+        <div class="item-image">
+            <img src="/images/ET2.jpg" alt="ENTREE2">
+        </div>
+        <div class="item-details">
+            <h3>Caprese</h3>
+            <p>Tranches de mozzarella, tranches de tomates, feuilles de basilic, huile d'olive, sel, poivre. </p>
+        </div>
+        <div class="item-price">
+            <span class="price">500 DA</span>
+            <button>Commander</button>
+        </div>
+     </div>
+
+     <div class="menu-item">
+        <div class="item-image">
+            <img src="/images/ET3.jpg" alt="ENTREE3">
+        </div>
+        <div class="item-details">
+            <h3>Antipasto misto</h3>
+            <p>Assortiment de charcuterie italienne (prosciutto, salami, coppa), fromages italiens, olives marinées, légumes grillés.</p>
+        </div>
+        <div class="item-price">
+            <span class="price">650 DA</span>
+            <button>Commander</button>
+        </div>
+     </div>
+
+     <div class="menu-item">
+        <div class="item-image">
+            <img src="/images/ET4.jpg" alt="ENTREE4">
+        </div>
+        <div class="item-details">
+            <h3>Cozze alla Marinara</h3>
+            <p> Moules cuites dans une sauce tomate parfumée à l'ail et au persil.</p>
+        </div>
+        <div class="item-price">
+            <span class="price">800 DA</span>
+            <button>Commander</button>
+        </div>
+     </div>
+    </div>
+
+   
+     <h2><u>PLATS PRINCIPAUX</u></h2>
+      <div id="plats" class="menu-section">
+     <div class="menu-item">
+        <div class="item-image">
+            <img src="/images/PL1.jpg" alt="Plat1">
+        </div>
+        <div class="item-details">
+            <h3>Penne Trastevere</h3>
+            <p>Penne, tomates concassées, ail, piment rouge, huile d'olive, basilic frais, parmesan râpé.</p>
+        </div>
+         <div class="item-price">
+            <span class="price">700 DA</span>
+            <button>Commander</button>
+        </div>
+    
+     </div> 
+
+     <div class="menu-item">
+        <div class="item-image">
+            <img src="/images/PL2.jpg" alt="Plat2">
+        </div>
+        <div class="item-details">
+            <h3>Spag Milan</h3>
+            <p> Spaghetti, œufs, fromage pecorino romano ou parmesan, poivre noir.</p>
+        </div>
+        <div class="item-price">
+            <span class="price">750 DA</span>
+            <button>Commander</button>
+        </div>
+     </div> 
+
+     <div class="menu-item">
+        <div class="item-image">
+            <img src="/images/PL3.jpg" alt="Plat3">
+        </div>
+        <div class="item-details">
+            <h3>Venise</h3>
+            <p>Tagliatelles, sauce pesto, beurre, parmesan râpé, sel, poivre, muscade.</p>
+        </div>
+        <div class="item-price">
+            <span class="price">800 DA</span>
+            <button>Commander</button>
+        </div>
+     </div> 
+
+     <div class="menu-item">
+        <div class="item-image">
+            <img src="/images/PL4.jpg" alt="Plat4">
+        </div>
+        <div class="item-details">
+            <h3>Venise</h3>
+            <p> Farfalle, épinards frais, ricotta, ail, huile d'olive, sel, poivre, pignons de pin.</p>
+        </div>
+        <div class="item-price">
+            <span class="price">900 DA</span>
+            <button>Commander</button>
+        </div>
+     </div> 
+
+     <div class="menu-item">
+        <div class="item-image">
+            <img src="/images/PL5.jpg" alt="Plat5">
+        </div>
+        <div class="item-details">
+            <h3>Napoli</h3>
+            <p> Linguine, fruits de mer (crevettes, moules, calmars), ail, persil frais, tomates cerises, huile d'olive.</p>
+        </div>
+        <div class="item-price">
+            <span class="price">1100 DA</span>
+            <button>Commander</button>
+        </div>
+     </div> 
+    </div>
+
+    
+     <h2><u>DESSERTS</u></h2>
+     <div id="desserts" class="menu-section">
+     <div class="menu-item">
+        <div class="item-image">
+            <img src="/images/DC1.jpg" alt="DESSERT1">
+        </div>
+        <div class="item-details">
+            <h3>Tiramisu</h3>
+            <p>Mascarpone, œufs, sucre, café, biscuits à la cuillère, cacao en poudre.</p>
+        </div>
+        <div class="item-price">
+            <span class="price">350 DA</span>
+            <button>Commander</button>
+        </div>
+     </div> 
+
+     <div class="menu-item">
+        <div class="item-image">
+            <img src="/images/DC2.jpg" alt="DESSERT2">
+        </div>
+        <div class="item-details">
+            <h3>Panna Cotta aux fruits rouges</h3>
+            <p>Crème fraîche, sucre, gélatine, vanille, fruits rouges (fraises, framboises, myrtilles), coulis de fruits rouges.</p>
+        </div>
+        <div class="item-price">
+            <span class="price">400 DA</span>
+            <button>Commander</button>
+        </div>
+     </div> 
+
+     <div class="menu-item">
+        <div class="item-image">
+            <img src="/images/DC3.jpg" alt="DESSERT3">
+        </div>
+        <div class="item-details">
+            <h3>Gelato artisanal</h3>
+            <p>Lait, crème, sucre, arômes naturels (chocolat, vanille, fraise, pistache).</p>
+        </div>
+        <div class="item-price">
+            <span class="price">450 DA</span>
+            <button>Commander</button>
+        </div>
+     </div> 
+
+     <div class="menu-item">
+        <div class="item-image">
+            <img src="/images/DC4.jpg" alt="DESSERT4">
+        </div>
+        <div class="item-details">
+            <h3>Cannoli siciliens</h3>
+            <p>Pâte frite en forme de tube, ricotta, sucre, zestes d'orange confits, pépites de chocolat, pistaches hachées.</p>
+        </div>
+        <div class="item-price">
+            <span class="price">500 DA</span>
+            <button>Commander</button>
+        </div>
+     </div> 
+   
+    <mark> Nos boissons disponibles peuvent varier d'un jour à l'autre en fonction de la disponibilité des produits. Veuillez consulter notre menu sur place pour découvrir notre sélection actuelle. <br>
+        Merci pour votre compréhension et à bientôt chez Le BASILIC !</mark>
+ </div>
+
+
+    <script src="/javaS/javaS.js"></script>
+    
+</body>
+   
+
+</html>
+

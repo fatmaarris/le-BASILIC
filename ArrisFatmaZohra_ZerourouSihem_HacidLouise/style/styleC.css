@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+label{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+#navbar {
+display: flex;
+justify-content: space-between;
+align-items: center; 
+}
+#navbar img{
+width: 80px;
+margin-left: 100px;
+}
+ul{
+list-style: none;
+}
+p  {
+color: #f2f2f2;
+}
+h2{
+color: #583808e4;
+padding: 3%;
+}
+a{
+text-decoration: none;
+}
+#navbar ul {
+display: flex;
+margin-right: 100px;
+}
+#navbar ul li a {
+padding: 15px 20px;
+color: #fafafa;
+font-size: 17px;
+}
+#navbar ul li a:hover {
+border-bottom: 2px solid #ffffff;
+}
+
+header {
+height: 10vh;
+position: relative;
+/* text-shadow: 5px 4px 11px rgb(120, 58, 29);
+padding: 10px 0;
+text-align: center; */
+}
+
+
+:root{
+/* --bodyBg:#8e754089; */
+--formBg:#a9845c77;
+--textColor:#573707ee;
+--primaryColor:#644e1e92;
+--paraColor:#805e2c;
+--paraColor:#482905;
+
+}
+
+
+body{
+font-family: 'Roboto Serif', serif;
+color: var(--textColor);
+/* background: var(--bodyBg); */
+padding-bottom: 5em;
+background-image: url(/images/kjbhvg.jpg);
+}
+
+section{
+display: flex;
+flex-direction: column;
+text-align: center;
+width: 90%;
+max-width: 550px;
+margin: auto;
+margin-top: 2em;
+}
+
+.sectionHeader{
+text-transform: capitalize;
+font-weight: bold;
+font-size: 1.1rem;
+color: var(--primaryColor);
+margin-bottom: .5em;
+}
+
+.heading,.sub-heading{
+margin-bottom: .5em;
+font-weight: bold;
+}
+
+.heading{
+font-size: 2.5em;
+}
+
+.sub-heading{
+text-align: left;
+}
+
+.contactForm{
+display: grid;
+gap: 3em;
+}
+
+form{
+width: 100%;
+margin-top: 3em;
+}
+
+.para{
+color: var(--paraColor);
+font-size: 1.1rem;
+line-height: 1.5em;
+margin-bottom: 1em;
+}
+
+.para2{
+text-align: left;
+}
+
+.input{
+width: 95%;
+max-width: 700px;
+border: none;
+font-size: .9rem;
+padding: 1em;
+outline: none;
+background-color: var(--formBg);
+color: var(--paraColor);
+border-radius: 10px;
+border: 1px solid rgb(100, 74, 27);
+margin-bottom: 1em;
+
+}
+
+.input:focus{
+border: 1px solid var(--primaryColor);
+}
+
+.input::placeholder{
+text-transform: capitalize;
+}
+
+.submit{
+background-color: var(--primaryColor);
+border: none;
+color: var(--textColor);
+font-weight: bold;
+cursor: pointer;
+width: 30%;
+}
+
+.map-container{
+position: relative;
+width: 100%;
+height: 500px;
+}
+
+.mapBg{
+position: absolute;
+background-color: var(--primaryColor);
+top: 0;
+right: 0;
+width: 200px;
+height: 90%;
+border-radius: 20px;
+}
+
+.map{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 90%;
+height: 90%;
+}
+
+.map iframe{
+width: 100%;
+height: 80%;
+}
+
+
+@media screen and (min-width:800px) {
+.contactMethod{
+display: flex;
+flex-direction: column;
+margin-top: 2em;
+text-align: left;
+}
+
+.method{
+display: flex;
+align-items: center;
+}
+
+.contactIcon{
+font-size: 2rem;
+color: var(--primaryColor);
+width: 70px;
+}
+
+@media screen and (min-width:800px) {
+section{
+max-width: 1100px;
+}
+.contactForm{
+grid-template-columns: 1fr 1fr;
+}   
+
+.contactMethod{
+flex-direction: row;
+justify-content: space-between;
+}
+
+}
+}
+.footer-icons {
+display: flex; /* Utiliser Flexbox pour aligner les éléments horizontalement */
+justify-content: center; /* Centrer les éléments horizontalement */
+align-items: center; /* Centrer les éléments verticalement (facultatif) */
+}
+
+/* Styles supplémentaires pour les icônes (optionnel) */
+.footer-icons a {
+margin: 0 10px; /* Espacement horizontal entre les icônes */
+color: rgba(77, 56, 7, 0.92);
+}
+
+.footer-icons i {
+font-size: 24px; /* Taille de police des icônes */
+}
+
+.footer-icons a:hover{
+background-color: rgba(184, 156, 111, 0.904);
+}
+
+
+

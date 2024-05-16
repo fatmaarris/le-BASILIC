@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+
+
+   body {
+  font-family: 'Roboto Serif', serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  background-image: url(/images/APM2.jpg);
+  background-repeat: no-repeat; 
+  /* background-position: center; */
+   background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+.menu-container {
+  display: flex;
+  flex-wrap: wrap; 
+   justify-content: center; /* Aligne les éléments flexbox au centre horizontalement */ 
+  padding: 20px; 
+}
+
+.menu-item {
+  display: flex;
+    width: 100%;
+    background-color: #5348353c;
+   margin-bottom: 72px; 
+  border: 1px solid #000000;
+   border-radius: 8px; 
+   overflow: hidden; 
+  box-shadow: 0 2px 5px rgba(95, 61, 14, 0.368);
+}
+
+
+.item-image {
+  flex: 1;
+}
+
+.item-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+.item-details {
+   flex: 2; 
+  padding: 20px;
+}
+
+.item-price {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #a771222d;
+  padding: 20px;
+}
+
+.item-price .price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #653103;
+  margin-bottom: 10px;
+}
+
+button {
+   padding: 10px 20px;
+  background-color: #7e450b72;
+  color: #3e1e02;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c28512a0;
+}
+
+.menu-nav {
+  background-color: #6539075e;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0%;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  color: #532c02;
+  padding: 0 20px; 
+   font-size: 18px; 
+   border-top: 3px solid transparent; 
+  transition: border-color 0.3s ease;
+}
+
+.menu-nav a:hover {
+   border: 1px solid #ffffffaf;
+
+}
+
+.menu-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.menu-section h3 {
+  color: #432a05;
+}
+h1, h2{
+  color: #472c04;
+}
+p{
+  color: #000000;
+}
+
+
+
+#navbar {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar img{
+  width: 80px;
+   margin-left: 100px;
+}
+ul{
+  list-style: none;
+}
+header {
+position: relative;
+}
+a{
+  text-decoration: none;
+}
+#navbar ul {
+  display: flex;
+  margin-right: 0px;
+  margin-left: 550px;
+}
+#navbar ul li a {
+  padding: 15px 20px;
+  color: #ffffff;
+  font-size: 17px;
+  justify-content: right;
+}
+#navbar ul li a:hover {
+   border-bottom: 2px solid #ffffff; 
+}
+
+/* Styles pour l'en-tête et le bouton */
+h1 {
+  display: inline-block; /* Permet au titre de partager la ligne avec le bouton */
+}
+
+#openModalButton {
+  float: right; /* Aligne le bouton à droite */
+}
+
+/* Styles pour la page modale */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* Fond semi-transparent */
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+mark{
+  color: #000000;
+  background-color: rgba(123, 70, 67, 0.502);
+}
+
+
